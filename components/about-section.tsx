@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -38,10 +39,13 @@ export function AboutSection() {
             className="order-1 lg:order-2"
           >
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm">
-              <img
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/benjbusfoto-IqmhFQ9WhVUfKxBuiIdROBPSxOfBa8.jpeg"
                 alt="Benji w BarberBUSie"
-                className="h-full w-full object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover"
+                quality={85}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/5 to-transparent" />
               <div className="absolute inset-0 border border-white/10" />

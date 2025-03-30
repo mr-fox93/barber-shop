@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 
@@ -33,9 +34,11 @@ export function SiteHeader() {
         className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-black/50 px-6 py-2 backdrop-blur-sm"
       >
         <Link href="/" className="flex items-center space-x-2">
-          <img
+          <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-ehWeVwcxXaoYGQvGAc6JXkSjFEYRXL.webp"
             alt="BarberBUS Logo"
+            width={32}
+            height={32}
             className="h-8 w-8"
           />
           <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-xl font-bold text-transparent">

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 
@@ -9,10 +10,14 @@ export function HeroSection() {
     <section className="relative">
       <div className="relative h-screen w-full overflow-hidden">
         <div className="relative h-full w-full">
-          <img
+          <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bus-ttufD8Em12JqPmOOB0U4lL4M82MoR7.webp"
             alt="BarberBUS Mobilny Salon"
-            className="absolute h-full w-full object-cover object-center md:object-cover"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center md:object-cover"
+            quality={85}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
         </div>
