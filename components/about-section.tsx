@@ -1,0 +1,54 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+export function AboutSection() {
+  return (
+    <section id="about" className="relative bg-black py-24">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+      <div className="container relative z-10 mx-auto max-w-screen-2xl px-4">
+        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="order-2 lg:order-1"
+          >
+            <h2 className="text-4xl font-bold tracking-tight">O mnie</h2>
+            <div className="mt-6 space-y-4 text-muted-foreground">
+              <p>
+                Cześć! Jestem Benji, a mój mobilny barber shop to wyjątkowe
+                miejsce, które łączy luksus, profesjonalizm i wygodę. Jestem
+                barberem od 2021 roku, rozwijając swoje umiejętności poprzez
+                specjalistyczne kursy barberskie i zdobywając cenne
+                doświadczenie w prestiżowym barbershopie.
+              </p>
+              <p>
+                W październiku 2024 r. stworzyłem pierwszy mobilny barber shop
+                we Wrocławiu i na Dolnym Śląsku, oferując usługi najwyższej
+                jakości w dowolnej wybranej przez Ciebie lokalizacji. Słoń
+                Beniamin BarberBUS, jadę do Ciebie!
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="order-1 lg:order-2"
+          >
+            <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/benjbusfoto-IqmhFQ9WhVUfKxBuiIdROBPSxOfBa8.jpeg"
+                alt="Benji w BarberBUSie"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/5 to-transparent" />
+              <div className="absolute inset-0 border border-white/10" />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
