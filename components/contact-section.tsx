@@ -63,54 +63,62 @@ export function ContactSection() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
       <div className="container relative z-10 mx-auto max-w-screen-2xl px-4">
         <motion.div
-          className="grid gap-8 md:grid-cols-3"
+          className="flex flex-col space-y-8"
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
         >
-          {contactInfo.map((contactItem, index) => (
-            <motion.div
-              key={contactItem.title}
-              variants={item}
-              className="group flex flex-col rounded-lg border border-white/10 bg-black/50 p-4 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 h-full"
-            >
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-black">
-                  <contactItem.icon className="h-5 w-5 text-primary" />
+          <motion.h2
+            variants={item}
+            className="text-4xl font-bold text-white text-center"
+          >
+            Kontakt
+          </motion.h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            {contactInfo.map((contactItem, index) => (
+              <motion.div
+                key={contactItem.title}
+                variants={item}
+                className="group flex flex-col rounded-lg border border-white/10 bg-black/50 p-4 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 h-full"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-black">
+                    <contactItem.icon className="h-5 w-5 text-primary" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-sm font-medium text-muted-foreground">
+                      {contactItem.title}
+                    </span>
+                    {!contactItem.multipleItems ? (
+                      <a
+                        href={contactItem.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold group-hover:text-primary"
+                      >
+                        {contactItem.description}
+                      </a>
+                    ) : (
+                      <div className="flex flex-col space-y-2 mt-1">
+                        {contactItem.descriptions?.map((desc, i) => (
+                          <a
+                            key={i}
+                            href={desc.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-semibold group-hover:text-primary hover:underline"
+                          >
+                            {desc.text}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-sm font-medium text-muted-foreground">
-                    {contactItem.title}
-                  </span>
-                  {!contactItem.multipleItems ? (
-                    <a
-                      href={contactItem.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-semibold group-hover:text-primary"
-                    >
-                      {contactItem.description}
-                    </a>
-                  ) : (
-                    <div className="flex flex-col space-y-2 mt-1">
-                      {contactItem.descriptions?.map((desc, i) => (
-                        <a
-                          key={i}
-                          href={desc.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-semibold group-hover:text-primary hover:underline"
-                        >
-                          {desc.text}
-                        </a>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
