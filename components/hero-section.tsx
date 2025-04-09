@@ -106,6 +106,41 @@ export function HeroSection() {
               </Button>
             </div>
 
+            {/* Mobile Runmageddon 2025 button */}
+            <div className="md:hidden flex justify-center mt-3">
+              <Button
+                size="lg"
+                className="relative overflow-hidden rounded-full border-2 border-runmagedon bg-black/40 text-runmagedon backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] px-6 py-3 transition-all hover:scale-105 hover:bg-black/50 animate-pulse-runmagedon w-[280px] h-[52px]"
+                asChild
+              >
+                <a
+                  href="https://book.plandok.com/pl/barberbus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="runmageddon-text text-base"
+                  style={{
+                    fontFamily: "'Wallpoet', sans-serif",
+                    textTransform: "uppercase",
+                    fontWeight: 400,
+                    letterSpacing: "1px",
+                  }}
+                >
+                  RUNMAGEDDON 2025
+                  <motion.div
+                    className="absolute inset-0 bg-runmagedon/10"
+                    initial={{ x: "-100%" }}
+                    animate={{ x: "100%" }}
+                    transition={{
+                      duration: 2,
+                      repeat: Number.POSITIVE_INFINITY,
+                      repeatDelay: 1,
+                      delay: 0.5,
+                    }}
+                  />
+                </a>
+              </Button>
+            </div>
+
             {/* Desktop "Zamów z dojazdem" button */}
             <div className="hidden md:block mt-2 md:mt-4">
               <Button
