@@ -61,6 +61,7 @@ const config: Config = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        runmagedon: "#ffde00",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -86,11 +87,23 @@ const config: Config = {
             backgroundColor: "rgba(255, 255, 255, 0.1)",
           },
         },
+        "pulse-runmagedon": {
+          "0%, 100%": {
+            opacity: "1",
+            boxShadow: "0 0 0 0 rgba(255, 222, 0, 0.7)",
+          },
+          "50%": {
+            opacity: "0.9",
+            boxShadow: "0 0 20px 10px rgba(255, 222, 0, 0.5)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-slow": "pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "pulse-runmagedon":
+          "pulse-runmagedon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },
