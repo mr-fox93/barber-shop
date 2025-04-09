@@ -118,6 +118,12 @@ export function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="runmageddon-text text-base"
+                  style={{
+                    fontFamily: "'Wallpoet', sans-serif",
+                    textTransform: "uppercase",
+                    fontWeight: 400,
+                    letterSpacing: "1px",
+                  }}
                 >
                   RUNMAGEDDON 2025
                   <motion.div
@@ -174,6 +180,13 @@ export function HeroSection() {
                   href="https://book.plandok.com/pl/barberbus"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="runmageddon-text text-base"
+                  style={{
+                    fontFamily: "'Wallpoet', sans-serif",
+                    textTransform: "uppercase",
+                    fontWeight: 400,
+                    letterSpacing: "1px",
+                  }}
                 >
                   RUNMAGEDDON 2025
                   <motion.div
@@ -295,6 +308,12 @@ export function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="runmageddon-text text-base"
+                  style={{
+                    fontFamily: "'Wallpoet', sans-serif",
+                    textTransform: "uppercase",
+                    fontWeight: 400,
+                    letterSpacing: "1px",
+                  }}
                 >
                   RUNMAGEDDON 2025
                   <motion.div
