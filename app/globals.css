@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import fontu przypominającego Runmageddon */
+@import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Klasa stylu dla tekstu Runmageddon */
+.runmageddon-text {
+  font-family: "Wallpoet", cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 @layer utilities {
