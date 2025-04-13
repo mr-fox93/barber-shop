@@ -34,7 +34,9 @@ export function FloatingButtons() {
         </Button>
       </motion.div>
 
-      {/* Runmagedon Button */}
+      {/* 
+      // RUNMAGEDDON 2025 - Temporarily hidden, keep for next year
+      // Runmagedon Button
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -61,6 +63,7 @@ export function FloatingButtons() {
           </a>
         </Button>
       </motion.div>
+      */}
 
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
