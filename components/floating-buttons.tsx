@@ -34,9 +34,7 @@ export function FloatingButtons() {
         </Button>
       </motion.div>
 
-      {/* 
-      // RUNMAGEDDON 2025 - Temporarily hidden, keep for next year
-      // Runmagedon Button
+      {/* Partynice Racing Button */}
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -58,12 +56,11 @@ export function FloatingButtons() {
             rel="noopener noreferrer"
             className="flex items-center justify-center"
           >
-            <Trophy className="h-6 w-6 text-black" />
-            <span className="sr-only runmageddon-text">Runmageddon 2025</span>
+            <span className="text-2xl">🐎</span>
+            <span className="sr-only partynice-text">PARTYNICE</span>
           </a>
         </Button>
       </motion.div>
-      */}
 
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
