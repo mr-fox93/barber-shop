@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import fontu przypominającego Runmageddon */
+/* Import fontów */
 @import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +17,15 @@ body {
   letter-spacing: 1px;
   font-weight: 700;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Klasa stylu dla tekstu Partynice */
+.partynice-text {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 @layer utilities {
