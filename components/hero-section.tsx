@@ -3,11 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
 export function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const t = useTranslations();
 
   return (
     <section className="relative">
@@ -92,7 +94,7 @@ export function HeroSection() {
                 onClick={() => setIsModalOpen(true)}
                 className="relative overflow-hidden rounded-full border border-white/30 bg-white/5 text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-white/25 animate-pulse-slow w-[280px]"
               >
-                Zarezerwuj wizytę
+                {t("hero.button")}
                 <motion.div
                   className="absolute inset-0 bg-white/30"
                   initial={{ x: "-100%" }}
@@ -118,7 +120,7 @@ export function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Zamów z dojazdem do Ciebie
+                  {t("hero.button")}
                   <motion.div
                     className="absolute inset-0 bg-primary/10"
                     initial={{ x: "-100%" }}
@@ -152,7 +154,7 @@ export function HeroSection() {
               <X className="h-6 w-6" />
             </button>
             <h2 className="mb-6 text-center text-2xl font-bold text-white">
-              Wybierz lokalizację
+              {t("hero.button")}
             </h2>
             <div className="space-y-4">
               <Button
@@ -212,7 +214,7 @@ export function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Zamów z dojazdem do Ciebie
+                  {t("hero.button")}
                   <motion.div
                     className="absolute inset-0 bg-primary/10"
                     initial={{ x: "-100%" }}

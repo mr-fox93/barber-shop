@@ -1,0 +1,87 @@
+{
+  "site": {
+    "title": "Słoń Beniamin barberBUS - Mobilny Barber Shop",
+    "description": "Usługi barberskie premium z dojazdem do klienta"
+  },
+  "header": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "forWho": "Dla kogo",
+    "about": "O mnie",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "MOBILNY BARBER SHOP",
+    "title": "Premium na Twoich zasadach",
+    "description": "Pierwszy mobilny barber shop we Wrocławiu, świadczący profesjonalne usługi barberskie w wybranej przez Ciebie lokalizacji",
+    "button": "Umów wizytę"
+  },
+  "services": {
+    "title": "Nasze Usługi",
+    "description": "Profesjonalne usługi barberskie świadczone w wybranej przez Ciebie lokalizacji",
+    "classicCut": {
+      "title": "Klasyczne Cięcie",
+      "description": "Tradycyjne strzyżenie łączące pracę nożyczkami i maszynką z płynnymi przejściami skin fade."
+    },
+    "buzzcut": {
+      "title": "Buzzcut",
+      "description": "Krótkie cięcie maszynką z charakterystycznym przejściem skin fade."
+    },
+    "beardStyling": {
+      "title": "Stylizacja Brody",
+      "description": "Profesjonalne przycinanie i stylizacja brody, dopasowane do kształtu Twojej twarzy."
+    },
+    "premiumPackage": {
+      "title": "Pakiet Premium",
+      "description": "Kompletna usługa stylizacji włosów i brody podczas jednej sesji."
+    }
+  },
+  "forWho": {
+    "title": "Dla kogo",
+    "description": "Kto skorzysta z moich mobilnych usług barberskich?",
+    "busyProfessionals": {
+      "title": "Oszczędność Czasu",
+      "description": "Przyjeżdżamy do Twojej lokalizacji, oszczędzając Twój cenny czas."
+    },
+    "specialEvents": {
+      "title": "Usługa Premium",
+      "description": "Luksusowe doświadczenie barberskie w prywatnym otoczeniu."
+    },
+    "elderlyOrDisabled": {
+      "title": "Mobilna Wygoda",
+      "description": "W pełni wyposażony mobilny salon pod Twoimi drzwiami."
+    },
+    "groups": {
+      "title": "Łatwa Rezerwacja",
+      "description": "Prosty proces rezerwacji - wybierz adres, datę i godzinę."
+    }
+  },
+  "about": {
+    "title": "O mnie",
+    "paragraph1": "Cześć! Jestem Benji, a mój mobilny barber shop to wyjątkowe miejsce, które łączy luksus, profesjonalizm i wygodę. Jestem barberem od 2021 roku, rozwijając swoje umiejętności poprzez specjalistyczne kursy barberskie i zdobywając cenne doświadczenie w prestiżowym barbershopie.",
+    "paragraph2": "W październiku 2024 r. stworzyłem pierwszy mobilny barber shop we Wrocławiu i na Dolnym Śląsku, oferując usługi najwyższej jakości w dowolnej wybranej przez Ciebie lokalizacji. Słoń Beniamin BarberBUS, jadę do Ciebie!"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Umów wizytę lub zadaj pytanie",
+    "name": "Imię",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "button": "Wyślij wiadomość",
+    "location": "Lokalizacja",
+    "locationText": "Wrocław i okolice (do 30 km)",
+    "workingHours": "Godziny pracy",
+    "workingHoursText": "Poniedziałek-Piątek: 10:00-20:00\nSobota: 10:00-16:00",
+    "phoneContact": "Telefon",
+    "phoneContactText": "+48 123 456 789"
+  },
+  "languageSwitch": {
+    "en": "Angielski",
+    "pl": "Polski"
+  },
+  "404": {
+    "title": "Strona nie znaleziona",
+    "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "goHome": "Przejdź na stronę główną"
+  }
+} 

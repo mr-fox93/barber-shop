@@ -1,35 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Car, Clock, Crown, CalendarCheck } from "lucide-react";
 
-const features = [
-  {
-    icon: Clock,
-    title: "Oszczędność Czasu",
-    description:
-      "Przyjeżdżamy do Twojej lokalizacji, oszczędzając Twój cenny czas.",
-  },
-  {
-    icon: Crown,
-    title: "Usługa Premium",
-    description: "Luksusowe doświadczenie barberskie w prywatnym otoczeniu.",
-  },
-  {
-    icon: Car,
-    title: "Mobilna Wygoda",
-    description: "W pełni wyposażony mobilny salon pod Twoimi drzwiami.",
-  },
-  {
-    icon: CalendarCheck,
-    title: "Łatwa Rezerwacja",
-    description: "Prosty proces rezerwacji - wybierz adres, datę i godzinę.",
-  },
-];
-
 export function ForWhoSection() {
+  const t = useTranslations();
+
+  const features = [
+    {
+      icon: Clock,
+      title: t("forWho.busyProfessionals.title"),
+      description: t("forWho.busyProfessionals.description"),
+    },
+    {
+      icon: Crown,
+      title: t("forWho.specialEvents.title"),
+      description: t("forWho.specialEvents.description"),
+    },
+    {
+      icon: Car,
+      title: t("forWho.elderlyOrDisabled.title"),
+      description: t("forWho.elderlyOrDisabled.description"),
+    },
+    {
+      icon: CalendarCheck,
+      title: t("forWho.groups.title"),
+      description: t("forWho.groups.description"),
+    },
+  ];
+
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-background/80 to-background py-12 md:py-24 lg:py-32">
+    <section id="forWho" className="relative overflow-hidden bg-gradient-to-b from-background/80 to-background py-12 md:py-24 lg:py-32">
       <div className="container relative z-10 mx-auto max-w-screen-2xl px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,11 +40,10 @@ export function ForWhoSection() {
           className="mx-auto max-w-[700px] text-center"
         >
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Dla kogo jest BarberBUS?
+            {t("forWho.title")}
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Dla tych, którzy cenią prywatność, czas i prestiż. Przenosimy
-            doświadczenie barbershopu do wybranej przez Ciebie lokalizacji.
+            {t("forWho.description")}
           </p>
         </motion.div>
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
