@@ -41,7 +41,7 @@ export function HeroSection() {
                 asChild
               >
                 <a
-                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o=m2673067"
+                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o="
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -114,7 +114,7 @@ export function HeroSection() {
                 asChild
               >
                 <a
-                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o=m2673067"
+                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o="
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -161,7 +161,7 @@ export function HeroSection() {
                 asChild
               >
                 <a
-                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o=m2673067"
+                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o="
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -208,7 +208,7 @@ export function HeroSection() {
                 asChild
               >
                 <a
-                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o=m2673067"
+                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o="
                   target="_blank"
                   rel="noopener noreferrer"
                 >
