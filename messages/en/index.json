@@ -1,0 +1,87 @@
+{
+  "site": {
+    "title": "Słoń Beniamin barberBUS - Mobile Barber Shop",
+    "description": "Premium mobile barber services coming to your location"
+  },
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "forWho": "For Whom",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "MOBILE BARBER SHOP",
+    "title": "Premium Experience at Your Doorstep",
+    "description": "The first mobile barber shop in Wrocław, bringing professional barber services to your location",
+    "button": "Book Now"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Professional barber services provided at your chosen location",
+    "classicCut": {
+      "title": "Classic Cut",
+      "description": "Traditional haircut combining scissors and machine work with smooth skin fade transitions."
+    },
+    "buzzcut": {
+      "title": "Buzzcut",
+      "description": "Short machine cut with characteristic skin fade transition."
+    },
+    "beardStyling": {
+      "title": "Beard Styling",
+      "description": "Professional beard trimming and styling, tailored to the shape of your face."
+    },
+    "premiumPackage": {
+      "title": "Premium Package",
+      "description": "Complete hair and beard styling service during one session."
+    }
+  },
+  "forWho": {
+    "title": "For Whom",
+    "description": "Who will benefit from my mobile barber services?",
+    "busyProfessionals": {
+      "title": "Save Time",
+      "description": "We come to your location, saving your precious time."
+    },
+    "specialEvents": {
+      "title": "Premium Service",
+      "description": "Luxurious barber experience in a private setting."
+    },
+    "elderlyOrDisabled": {
+      "title": "Mobile Convenience",
+      "description": "A fully equipped mobile salon at your doorstep."
+    },
+    "groups": {
+      "title": "Easy Booking",
+      "description": "Simple booking process – choose address, date and time."
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "Hi! I'm Benji, and my mobile barber shop is a unique place that combines luxury, professionalism, and convenience. I've been a barber since 2021, developing my skills through specialized barber courses and gaining valuable experience in a prestigious barbershop.",
+    "paragraph2": "In October 2024, I created the first mobile barber shop in Wrocław and Lower Silesia, offering highest quality services at any location of your choice. Słoń Beniamin BarberBUS, I'm coming to you!"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Book your appointment or ask a question",
+    "name": "Name",
+    "phone": "Phone",
+    "message": "Message",
+    "button": "Send Message",
+    "location": "Location",
+    "locationText": "Wrocław and surrounding areas (up to 30 km)",
+    "workingHours": "Working Hours",
+    "workingHoursText": "Monday-Friday: 10:00-20:00\nSaturday: 10:00-16:00",
+    "phoneContact": "Phone",
+    "phoneContactText": "+48 123 456 789"
+  },
+  "languageSwitch": {
+    "en": "English",
+    "pl": "Polish"
+  },
+  "404": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "goHome": "Go to homepage"
+  }
+} 

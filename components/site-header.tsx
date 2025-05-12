@@ -5,12 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { LanguageSwitcher } from "./language-switcher";
 
 export function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations();
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -20,10 +23,11 @@ export function SiteHeader() {
   };
 
   const navigation = [
-    { name: "Zarezerwuj", href: "#book" },
-    { name: "Usługi", href: "#services" },
-    { name: "O mnie", href: "#about" },
-    { name: "Kontakt", href: "#contact" },
+    { name: t("header.home"), href: "#" },
+    { name: t("header.services"), href: "#services" },
+    { name: t("header.forWho"), href: "#forWho" },
+    { name: t("header.about"), href: "#about" },
+    { name: t("header.contact"), href: "#contact" },
   ];
 
   return (
@@ -59,24 +63,31 @@ export function SiteHeader() {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center space-x-2">
+          <LanguageSwitcher />
           <Button
             size="sm"
             className="bg-white text-black hover:bg-white/90"
             onClick={scrollToTop}
           >
-            Umów wizytę
+            {t("hero.button")}
           </Button>
         </div>
 
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Menu</span>
-            </Button>
-          </SheetTrigger>
+          <div className="flex items-center space-x-2 md:hidden">
+            <LanguageSwitcher />
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Menu</span>
+              </Button>
+            </SheetTrigger>
+          </div>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <div className="flex justify-end mb-8">
+              <LanguageSwitcher />
+            </div>
             <nav className="flex flex-col gap-4">
               {navigation.map((item) => (
                 <Link

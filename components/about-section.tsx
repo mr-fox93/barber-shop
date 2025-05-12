@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export function AboutSection() {
+  const t = useTranslations();
+  
   return (
     <section id="about" className="relative bg-black py-24">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
@@ -15,20 +18,13 @@ export function AboutSection() {
             viewport={{ once: true }}
             className="order-2 lg:order-1"
           >
-            <h2 className="text-4xl font-bold tracking-tight">O mnie</h2>
+            <h2 className="text-4xl font-bold tracking-tight">{t("about.title")}</h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
               <p>
-                Cześć! Jestem Benji, a mój mobilny barber shop to wyjątkowe
-                miejsce, które łączy luksus, profesjonalizm i wygodę. Jestem
-                barberem od 2021 roku, rozwijając swoje umiejętności poprzez
-                specjalistyczne kursy barberskie i zdobywając cenne
-                doświadczenie w prestiżowym barbershopie.
+                {t("about.paragraph1")}
               </p>
               <p>
-                W październiku 2024 r. stworzyłem pierwszy mobilny barber shop
-                we Wrocławiu i na Dolnym Śląsku, oferując usługi najwyższej
-                jakości w dowolnej wybranej przez Ciebie lokalizacji. Słoń
-                Beniamin BarberBUS, jadę do Ciebie!
+                {t("about.paragraph2")}
               </p>
             </div>
           </motion.div>
