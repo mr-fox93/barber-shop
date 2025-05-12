@@ -34,34 +34,6 @@ export function FloatingButtons() {
         </Button>
       </motion.div>
 
-      {/* Partynice Racing Button */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-          delay: 0.1,
-        }}
-      >
-        <Button
-          size="icon"
-          className="h-12 w-12 rounded-full bg-runmagedon text-black shadow-lg hover:bg-runmagedon/90 animate-pulse-runmagedon flex items-center justify-center"
-          asChild
-        >
-          <a
-            href="https://book.plandok.com/pl/barberbus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center"
-          >
-            <span className="text-2xl">🐎</span>
-            <span className="sr-only partynice-text">PARTYNICE</span>
-          </a>
-        </Button>
-      </motion.div>
-
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -19,15 +19,6 @@ body {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* Klasa stylu dla tekstu Partynice */
-.partynice-text {
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
