@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Scissors, Ruler, BeakerIcon as Beard, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 export function ServicesSection() {
   const t = useTranslations();
@@ -11,22 +11,22 @@ export function ServicesSection() {
     {
       title: t("services.classicCut.title"),
       description: t("services.classicCut.description"),
-      icon: Scissors,
+      icon: "/scissors.png",
     },
     {
       title: t("services.buzzcut.title"),
       description: t("services.buzzcut.description"),
-      icon: Ruler,
+      icon: "/shaver.png",
     },
     {
       title: t("services.beardStyling.title"),
       description: t("services.beardStyling.description"),
-      icon: Beard,
+      icon: "/beard.png",
     },
     {
       title: t("services.premiumPackage.title"),
       description: t("services.premiumPackage.description"),
-      icon: Sparkles,
+      icon: "/premium.png",
     },
   ];
 
@@ -73,7 +73,11 @@ export function ServicesSection() {
             <motion.div key={idx} variants={item} className="h-full">
               <div className="group relative flex h-full flex-col rounded-xl border border-white/10 bg-black/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-primary/50">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-black">
-                  <service.icon className="h-6 w-6 text-primary" />
+                  <img 
+                    src={service.icon} 
+                    alt={service.title}
+                    className="h-6 w-6"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold tracking-tight">
                   {service.title}

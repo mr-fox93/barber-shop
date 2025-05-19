@@ -14,7 +14,8 @@
     "subtitle": "MOBILNY BARBER SHOP",
     "title": "Premium na Twoich zasadach",
     "description": "Pierwszy mobilny barber shop we Wrocławiu, świadczący profesjonalne usługi barberskie w wybranej przez Ciebie lokalizacji",
-    "button": "Umów wizytę"
+    "button": "Umów wizytę",
+    "buttonMobile": "Umów z dojazdem do Ciebie"
   },
   "services": {
     "title": "Nasze Usługi",

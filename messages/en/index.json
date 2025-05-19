@@ -14,7 +14,8 @@
     "subtitle": "MOBILE BARBER SHOP",
     "title": "Premium Experience at Your Doorstep",
     "description": "The first mobile barber shop in Wrocław, bringing professional barber services to your location",
-    "button": "Book Now"
+    "button": "Book Now",
+    "buttonMobile": "Book with Home Visit"
   },
   "services": {
     "title": "Our Services",

@@ -120,7 +120,7 @@ export function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {t("hero.button")}
+                  {t("hero.buttonMobile")}
                   <motion.div
                     className="absolute inset-0 bg-primary/10"
                     initial={{ x: "-100%" }}
@@ -214,7 +214,7 @@ export function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {t("hero.button")}
+                  {t("hero.buttonMobile")}
                   <motion.div
                     className="absolute inset-0 bg-primary/10"
                     initial={{ x: "-100%" }}
