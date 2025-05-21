@@ -36,7 +36,7 @@ export function AboutSection() {
               viewport={{ once: true }}
               className="order-1 lg:order-2"
             >
-              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm">
+              <div className="relative mx-auto aspect-[3/4] max-h-[60vh] max-w-[350px] overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/benjbusfoto-IqmhFQ9WhVUfKxBuiIdROBPSxOfBa8.jpeg"
                   alt="Benji w BarberBUSie"
@@ -61,7 +61,7 @@ export function AboutSection() {
                 viewport={{ once: true }}
                 className="order-1"
               >
-                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm">
+                <div className="relative mx-auto aspect-[3/4] max-h-[60vh] max-w-[350px] overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm">
                   <Image
                     src="/dorianshort.png"
                     alt="Dorian - doświadczony barber"
