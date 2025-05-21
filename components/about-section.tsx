@@ -3,9 +3,51 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export function AboutSection() {
   const t = useTranslations();
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    // Update the window width
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Set initial width
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Calculate image dimensions based on viewport size
+  const getImageClasses = () => {
+    // Base classes that are always applied
+    const baseClasses = "relative overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm";
+    
+    if (windowWidth === 0) {
+      // Initial render before measurement or SSR
+      return `${baseClasses} aspect-[3/4] max-h-[60vh] max-w-[350px] mx-auto`;
+    }
+    
+    // Small screens (typical 13-inch laptop)
+    if (windowWidth < 1200) {
+      return `${baseClasses} aspect-[3/4] max-h-[55vh] max-w-[350px] mx-auto`;
+    }
+    
+    // Medium screens
+    if (windowWidth < 1600) {
+      return `${baseClasses} aspect-[3/4] max-h-[60vh] max-w-[400px] mx-auto`;
+    }
+    
+    // Large screens (20+ inch)
+    return `${baseClasses} aspect-[3/4] max-h-[70vh] max-w-[500px] mx-auto`;
+  };
   
   return (
     <section id="about" className="relative bg-black py-24">
@@ -36,7 +78,7 @@ export function AboutSection() {
               viewport={{ once: true }}
               className="order-1 lg:order-2"
             >
-              <div className="relative mx-auto aspect-[3/4] max-h-[60vh] max-w-[350px] overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm">
+              <div className={getImageClasses()}>
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/benjbusfoto-IqmhFQ9WhVUfKxBuiIdROBPSxOfBa8.jpeg"
                   alt="Benji w BarberBUSie"
@@ -61,7 +103,7 @@ export function AboutSection() {
                 viewport={{ once: true }}
                 className="order-1"
               >
-                <div className="relative mx-auto aspect-[3/4] max-h-[60vh] max-w-[350px] overflow-hidden rounded-2xl border border-white/10 bg-black/50 backdrop-blur-sm">
+                <div className={getImageClasses()}>
                   <Image
                     src="/dorianshort.png"
                     alt="Dorian - doświadczony barber"
