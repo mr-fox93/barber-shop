@@ -19,24 +19,30 @@
 - **Service Showcase**: Detailed presentation of available services
 - **Easy Contact & Booking**: Integrated booking system and contact forms
 
-## 🖼️ Screenshots
+## 🖼️ Screenshots & Features
 
-### Desktop Experience
+### 🏠 **Landing Page Experience**
 ![Landing Page](./public/readme/landing.png)
-*Modern hero section with animated call-to-action buttons*
+*Modern hero section with glassmorphism effects, animated call-to-action buttons, and premium branding. Features dual booking options for both physical locations and mobile service.*
 
+### 🌍 **Internationalization (i18n)**
+The website supports both **Polish** (default) and **English** to reach international clients in Wrocław's diverse market. Dynamic language switching with cookie-based persistence ensures seamless user experience for both local and international customers.
+
+### 🛠️ **Professional Services Showcase**
 ![Services Section](./public/readme/ourservices.png)
-*Professional services showcase with detailed descriptions*
+*Detailed presentation of barber services including Classic Cut, Buzzcut, Beard Styling, and Premium Package. Each service features custom icons and professional descriptions.*
 
+### 👨‍💼 **Personal Branding & About Section**
 ![About Section](./public/readme/aboutme.png)
-*Personal branding and barber expertise presentation*
+*Professional presentation of the barber's expertise, experience since 2021, and the story behind Wrocław's first mobile barber shop. Features high-quality photography and compelling storytelling.*
 
-### Mobile Experience
+### 📱 **Mobile-First Responsive Design**
 ![Mobile Landing](./public/readme/mobilelanding.PNG)
-*Responsive mobile design with optimized navigation*
+*Fully responsive mobile experience with touch-optimized navigation, adaptive layouts, and mobile-specific booking flows. Designed for on-the-go customers.*
 
+### 📅 **Mobile Booking Experience**
 ![Mobile Booking](./public/readme/mobilebookavisit.PNG)
-*Streamlined mobile booking experience*
+*Streamlined mobile booking interface with easy location selection, service choice, and appointment scheduling. Optimized for quick conversions on mobile devices.*
 
 ## 🚀 Tech Stack
 
