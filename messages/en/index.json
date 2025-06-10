@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Słoń Beniamin barberBUS - Mobile Barber Shop",
-    "description": "Premium mobile barber services coming to your location"
+    "title": "Mobile Barber Shop Wrocław - Słoń Beniamin BarberBUS Home Service",
+    "description": "Mobile barber Wrocław with home and office service. Professional barber at your location. Mobile barbershop with home visits and office appointments in Wrocław."
   },
   "header": {
     "home": "Home",
@@ -11,15 +11,15 @@
     "contact": "Contact"
   },
   "hero": {
-    "subtitle": "MOBILE BARBER SHOP",
-    "title": "Premium Experience at Your Doorstep",
-    "description": "The first mobile barber shop in Wrocław, bringing professional barber services to your location",
+    "subtitle": "MOBILE BARBER SHOP WROCŁAW",
+    "title": "Professional Barber at Your Location",
+    "description": "The first mobile barber shop in Wrocław, bringing professional barber services to your home, office or chosen location. Mobile barber service on demand.",
     "button": "Book Now",
     "buttonMobile": "Book with Home Visit"
   },
   "services": {
     "title": "Our Services",
-    "description": "Professional barber services provided at your chosen location",
+    "description": "Professional mobile barber services in Wrocław and surrounding areas",
     "classicCut": {
       "title": "Classic Cut",
       "description": "Traditional haircut combining scissors and machine work with smooth skin fade transitions."
@@ -39,22 +39,22 @@
   },
   "forWho": {
     "title": "For Whom",
-    "description": "Who will benefit from my mobile barber services?",
+    "description": "Who will benefit from mobile barber services in Wrocław?",
     "busyProfessionals": {
-      "title": "Save Time",
-      "description": "We come to your location, saving your precious time."
+      "title": "Office Barber Service",
+      "description": "Professional barber services at your office in Wrocław. Save time, don't leave work."
     },
     "specialEvents": {
-      "title": "Premium Service",
-      "description": "Luxurious barber experience in a private setting."
+      "title": "Home Barber Service",
+      "description": "Luxurious barber experience in the privacy of your home."
     },
     "elderlyOrDisabled": {
       "title": "Mobile Convenience",
-      "description": "A fully equipped mobile salon at your doorstep."
+      "description": "Fully equipped mobile barbershop at your doorstep in Wrocław."
     },
     "groups": {
       "title": "Easy Booking",
-      "description": "Simple booking process – choose address, date and time."
+      "description": "Simple booking process – choose your address in Wrocław, date and time."
     }
   },
   "about": {
@@ -68,12 +68,12 @@
   },
   "contact": {
     "title": "Contact",
-    "description": "Book your appointment or ask a question",
+    "description": "Book your mobile barber appointment in Wrocław",
     "name": "Name",
     "phone": "Phone",
     "message": "Message",
     "button": "Send Message",
-    "location": "Location",
+    "location": "Service Area",
     "locationText": "Wrocław and surrounding areas (up to 30 km)",
     "workingHours": "Working Hours",
     "workingHoursText": "Monday-Friday: 10:00-20:00\nSaturday: 10:00-16:00",

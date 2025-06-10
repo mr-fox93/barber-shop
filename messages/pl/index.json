@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Słoń Beniamin barberBUS - Mobilny Barber Shop",
-    "description": "Usługi barberskie premium z dojazdem do klienta"
+    "title": "Mobilny Barber Shop Wrocław - Słoń Beniamin BarberBUS z Dojazdem",
+    "description": "Barber Wrocław z dojazdem do klienta. Mobilny barber shop z usługami w domu i biurze. Barber z dojazdem do biura Wrocław. Profesjonalne strzyżenie i stylizacja brody."
   },
   "header": {
     "home": "Strona główna",
@@ -11,15 +11,15 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "subtitle": "MOBILNY BARBER SHOP",
-    "title": "Premium na Twoich zasadach",
-    "description": "Pierwszy mobilny barber shop we Wrocławiu, świadczący profesjonalne usługi barberskie w wybranej przez Ciebie lokalizacji",
+    "subtitle": "MOBILNY BARBER SHOP WROCŁAW",
+    "title": "Barber z dojazdem do Ciebie",
+    "description": "Pierwszy mobilny barber shop we Wrocławiu. Profesjonalne usługi barberskie z dojazdem do klienta w domu, biurze lub wybranej lokalizacji. Barber Wrocław na telefon.",
     "button": "Umów wizytę",
     "buttonMobile": "Umów z dojazdem do Ciebie"
   },
   "services": {
     "title": "Nasze Usługi",
-    "description": "Profesjonalne usługi barberskie świadczone w wybranej przez Ciebie lokalizacji",
+    "description": "Profesjonalne usługi barberskie z dojazdem do klienta we Wrocławiu i okolicach",
     "classicCut": {
       "title": "Klasyczne Cięcie",
       "description": "Tradycyjne strzyżenie łączące pracę nożyczkami i maszynką z płynnymi przejściami skin fade."
@@ -39,22 +39,22 @@
   },
   "forWho": {
     "title": "Dla kogo",
-    "description": "Kto skorzysta z moich mobilnych usług barberskich?",
+    "description": "Kto skorzysta z mobilnego barbera we Wrocławiu?",
     "busyProfessionals": {
-      "title": "Oszczędność Czasu",
-      "description": "Przyjeżdżamy do Twojej lokalizacji, oszczędzając Twój cenny czas."
+      "title": "Barber z dojazdem do biura",
+      "description": "Usługi barberskie w Twoim biurze we Wrocławiu. Oszczędzaj czas, nie wychodź z pracy."
     },
     "specialEvents": {
-      "title": "Usługa Premium",
-      "description": "Luksusowe doświadczenie barberskie w prywatnym otoczeniu."
+      "title": "Barber w domu",
+      "description": "Luksusowe doświadczenie barberskie w prywatnym otoczeniu Twojego domu."
     },
     "elderlyOrDisabled": {
       "title": "Mobilna Wygoda",
-      "description": "W pełni wyposażony mobilny salon pod Twoimi drzwiami."
+      "description": "W pełni wyposażony mobilny salon fryzjerski pod Twoimi drzwiami we Wrocławiu."
     },
     "groups": {
       "title": "Łatwa Rezerwacja",
-      "description": "Prosty proces rezerwacji - wybierz adres, datę i godzinę."
+      "description": "Prosty proces rezerwacji - wybierz adres we Wrocławiu, datę i godzinę."
     }
   },
   "about": {
@@ -68,7 +68,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "description": "Umów wizytę lub zadaj pytanie",
+    "description": "Umów wizytę z mobilnym barberem we Wrocławiu",
     "name": "Imię",
     "phone": "Telefon",
     "message": "Wiadomość",
