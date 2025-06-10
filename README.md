@@ -10,38 +10,30 @@
 ## 🚀 Tech Stack
 
 ### **Frontend Framework**
-- **Next.js 15.2.4** - React framework with App Router
-- **React 18.3.1** - Component library
-- **TypeScript 5.0** - Type safety
+- **Next.js 15.2.4** - React framework with App Router.
+- **React 18.3.1** - Component library.
+- **TypeScript 5.0** - Type safety.
 
 ### **Styling & UI**
-- **Tailwind CSS 3.4.17** - Utility-first CSS
-- **Shadcn/ui** - Component library
-- **Framer Motion** - Animations
+- **Tailwind CSS 3.4.17** - Utility-first CSS.
+- **Shadcn/ui** - Component library.
+- **Framer Motion** - Animations.
 
 ### **Internationalization**
-- **Next-intl 4.1.0** - Polish/English support
+- **Next-intl 4.1.0** - Polish/English support.
 
 ## 🎯 Key Business Features
 
 **Client Requirements → Solutions Delivered:**
 
-- **Mobile Service Booking**: Client needed online booking for mobile barber services → Built integrated booking system with location selection
-- **Dual Location Support**: Required booking for 2 physical locations + mobile service → Implemented location-specific booking flows
-- **International Reach**: Needed English/Polish support for Wrocław market → Added complete i18n with 2 languages
-- **Professional Presence**: Wanted premium brand image → Delivered modern UI with service showcase
-- **Mobile-First Users**: Target audience uses mobile devices → Built responsive design with mobile-optimized booking
+- **Mobile Service Booking**: Client needed online booking for mobile barber services → Built integrated booking system with location selection.
+- **Dual Location Support**: Required booking for 2 physical locations + mobile service → Implemented location-specific booking flows.
+- **International Reach**: Needed English/Polish support for Wrocław market → Added complete i18n with 2 languages.
+- **Professional Presence**: Wanted premium brand image → Delivered modern UI with service showcase.
+- **Mobile-First Users**: Target audience uses mobile devices → Built responsive design with mobile-optimized booking.
 
-**Business Impact:**
-- Direct booking integration increases conversion
-- Multilingual support expands customer base
-- Mobile optimization targets primary user behavior
-- Service showcase differentiates from competitors
 
 ## 📊 Performance Results
-
-### Google PageSpeed Insights
-![Google Performance](public/readme/google.png)
 
 ### GTmetrix Analysis  
 ![GTmetrix Performance](public/readme/gtx.png)
@@ -61,7 +53,7 @@
 
 ### Services Section
 ![Services Section](./public/readme/ourservices.png)
-*Service catalog with pricing and descriptions*
+*Service catalog with descriptions*
 
 ### About Section
 ![About Section](./public/readme/aboutme.png)
@@ -74,22 +66,15 @@
 ## ✨ Technical Features
 
 ### **Design System**
-- Responsive layout for all devices
-- Dark theme with consistent branding
-- Smooth animations and transitions
-- Accessibility compliance
+- Responsive layout for all devices.
+- Dark theme with consistent branding.
+- Smooth animations and transitions.
+- Accessibility compliance.
 
 ### **Internationalization** 
-- Dynamic Polish/English switching
-- Localized content and UI
-- Cookie-based locale persistence
-- SEO optimization for both languages
+- Dynamic Polish/English switching.
+- SEO optimization for both languages.
 
-### **Performance**
-- Next.js Image optimization
-- Automatic code splitting
-- Core Web Vitals optimization
-- Vercel deployment with analytics
 
 ## 🏗️ Project Structure
 
@@ -113,8 +98,6 @@ barber-shop/
 ## 🌐 Deployment
 
 - **Production**: [barberbus.pl](https://barberbus.pl)
-- **Platform**: Vercel with automatic deployments
-- **Analytics**: Integrated performance monitoring
 
 ---
 
