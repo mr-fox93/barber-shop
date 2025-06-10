@@ -41,10 +41,10 @@
 ## 📊 Performance Results
 
 ### Google PageSpeed Insights
-![Google Performance](./public/readme/google.png)
+![Google Performance](public/readme/google.png)
 
 ### GTmetrix Analysis  
-![GTmetrix Performance](./public/readme/gtx.png)
+![GTmetrix Performance](public/readme/gtx.png)
 
 **Results:**
 - **First Contentful Paint**: <1.5s
