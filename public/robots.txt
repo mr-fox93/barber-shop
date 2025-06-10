@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://barberbus.pl/sitemap.xml
+
+# Disallow admin areas (if any in the future)
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow all images and assets
+Allow: /public/
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.css$
+Allow: /*.js$
+
+# Crawl delay
+Crawl-delay: 1 
