@@ -1,9 +1,6 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://barberbus.pl/sitemap.xml
-
 # Disallow admin areas (if any in the future)
 Disallow: /admin/
 Disallow: /_next/
