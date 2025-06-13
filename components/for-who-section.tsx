@@ -51,7 +51,7 @@ export function ForWhoSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="mx-auto max-w-[700px] text-center"
         >
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
@@ -65,11 +65,11 @@ export function ForWhoSection() {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
         >
           {features.map((feature, index) => (
-            <motion.div key={feature.title} variants={item} className="h-full">
+            <motion.div key={index} variants={item} className="h-full">
               <div className="group relative flex h-full flex-col rounded-xl border border-white/10 bg-black/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-white">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-black">
                   <feature.icon className="h-6 w-6 text-primary" />

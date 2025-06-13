@@ -39,22 +39,22 @@
   },
   "forWho": {
     "title": "Dla kogo",
-    "description": "Kto skorzysta z mobilnego barbera we Wrocławiu?",
+    "description": "Kto skorzysta z moich mobilnych usług barberskich?",
     "busyProfessionals": {
-      "title": "Barber z dojazdem do biura",
-      "description": "Usługi barberskie w Twoim biurze we Wrocławiu. Oszczędzaj czas, nie wychodź z pracy."
+      "title": "Oszczędność Czasu",
+      "description": "Przyjeżdżamy do Twojej lokalizacji, oszczędzając Twój cenny czas."
     },
     "specialEvents": {
-      "title": "Barber w domu",
-      "description": "Luksusowe doświadczenie barberskie w prywatnym otoczeniu Twojego domu."
+      "title": "Usługa Premium",
+      "description": "Luksusowe doświadczenie barberskie w prywatnym otoczeniu."
     },
     "elderlyOrDisabled": {
       "title": "Mobilna Wygoda",
-      "description": "W pełni wyposażony mobilny salon fryzjerski pod Twoimi drzwiami we Wrocławiu."
+      "description": "W pełni wyposażony mobilny salon pod Twoimi drzwiami."
     },
     "groups": {
       "title": "Łatwa Rezerwacja",
-      "description": "Prosty proces rezerwacji - wybierz adres we Wrocławiu, datę i godzinę."
+      "description": "Prosty proces rezerwacji - wybierz adres, datę i godzinę."
     }
   },
   "about": {

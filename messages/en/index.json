@@ -39,22 +39,22 @@
   },
   "forWho": {
     "title": "For Whom",
-    "description": "Who will benefit from mobile barber services in Wrocław?",
+    "description": "Who will benefit from my mobile barber services?",
     "busyProfessionals": {
-      "title": "Office Barber Service",
-      "description": "Professional barber services at your office in Wrocław. Save time, don't leave work."
+      "title": "Save Time",
+      "description": "We come to your location, saving your precious time."
     },
     "specialEvents": {
-      "title": "Home Barber Service",
-      "description": "Luxurious barber experience in the privacy of your home."
+      "title": "Premium Service",
+      "description": "Luxurious barber experience in a private setting."
     },
     "elderlyOrDisabled": {
       "title": "Mobile Convenience",
-      "description": "Fully equipped mobile barbershop at your doorstep in Wrocław."
+      "description": "A fully equipped mobile salon at your doorstep."
     },
     "groups": {
       "title": "Easy Booking",
-      "description": "Simple booking process – choose your address in Wrocław, date and time."
+      "description": "Simple booking process – choose address, date and time."
     }
   },
   "about": {
