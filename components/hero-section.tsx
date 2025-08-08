@@ -85,6 +85,33 @@ export function HeroSection() {
                   />
                 </a>
               </Button>
+
+              <Button
+                size="lg"
+                className="relative w-full overflow-hidden rounded-full border border-white/30 bg-[#FFBF00] text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] md:border-transparent md:bg-[#FFBF00] md:text-white md:shadow-lg md:backdrop-blur-md px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-[#FFBF00]/90 sm:w-[220px] md:w-[250px]"
+                asChild
+              >
+                <a
+                  href="https://book.plandok.com/pl/barberbus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2"
+                >
+                  KS Maślice
+                  <span aria-hidden>⚽️</span>
+                  <motion.div
+                    className="absolute inset-0 bg-white/10"
+                    initial={{ x: "-100%" }}
+                    animate={{ x: "100%" }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Number.POSITIVE_INFINITY,
+                      repeatDelay: 2,
+                      delay: 0.25,
+                    }}
+                  />
+                </a>
+              </Button>
             </div>
 
             {/* Mobile button */}
@@ -200,6 +227,32 @@ export function HeroSection() {
                       repeat: Number.POSITIVE_INFINITY,
                       repeatDelay: 2,
                       delay: 0.5,
+                    }}
+                  />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                className="relative w-full overflow-hidden rounded-full border border-white/30 bg-[#FFBF00] text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-[#FFBF00]/90"
+                asChild
+              >
+                <a
+                  href="https://book.plandok.com/pl/barberbus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2"
+                >
+                  KS Maślice
+                  <span aria-hidden>⚽️</span>
+                  <motion.div
+                    className="absolute inset-0 bg-white/10"
+                    initial={{ x: "-100%" }}
+                    animate={{ x: "100%" }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Number.POSITIVE_INFINITY,
+                      repeatDelay: 2,
+                      delay: 0.25,
                     }}
                   />
                 </a>
