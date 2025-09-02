@@ -80,7 +80,7 @@ export function AboutSection() {
             >
               <div className={getImageClasses()}>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/benjbusfoto-IqmhFQ9WhVUfKxBuiIdROBPSxOfBa8.jpeg"
+                  src="/benjipng.png"
                   alt="Benji w BarberBUSie"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -105,12 +105,12 @@ export function AboutSection() {
               >
                 <div className={getImageClasses()}>
                   <Image
-                    src="/dorianshort.png"
+                    src="/dorianpng.png"
                     alt="Dorian - doświadczony barber"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover"
-                    style={{ objectPosition: "90% center" }}
+                    style={{ objectPosition: "90% 30%" }}
                     quality={95}
                     priority
                   />
