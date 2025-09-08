@@ -36,7 +36,7 @@ export async function generateMetadata() {
       type: "website",
       images: [
         {
-          url: "/placeholder.jpg",
+          url: "/linkedin.png",
           width: 1200,
           height: 630,
           alt: locale === 'pl' ? "Mobilny Barber Shop Wrocław" : "Mobile Barber Shop Wrocław",
@@ -47,7 +47,7 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title: siteData.title,
       description: heroData.description,
-      images: ["/placeholder.jpg"],
+      images: ["/linkedin.png"],
     },
     alternates: {
       canonical: "https://barberbus.pl",
@@ -79,7 +79,7 @@ export default async function RootLayout({
       : "First mobile barber shop in Wrocław. Professional barber services at your home or office. Also 2 permanent locations.",
     "url": "https://barberbus.pl",
     "telephone": "+48660739882",
-    "image": "https://barberbus.pl/placeholder.jpg",
+    "image": "https://barberbus.pl/linkedin.png",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Wrocław",
