@@ -97,8 +97,13 @@ export function HeroSection() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2"
                 >
-                  KS Maślice
-                  <span aria-hidden>⚽️</span>
+                  <Image
+                    src="/runamegod.png"
+                    alt="KS Maślice"
+                    width={120}
+                    height={40}
+                    className="h-auto w-auto object-contain"
+                  />
                   <motion.div
                     className="absolute inset-0 bg-white/10"
                     initial={{ x: "-100%" }}
@@ -242,8 +247,13 @@ export function HeroSection() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2"
                 >
-                  KS Maślice
-                  <span aria-hidden>⚽️</span>
+                  <Image
+                    src="/runamegod.png"
+                    alt="KS Maślice"
+                    width={120}
+                    height={40}
+                    className="h-auto w-auto object-contain"
+                  />
                   <motion.div
                     className="absolute inset-0 bg-white/10"
                     initial={{ x: "-100%" }}
