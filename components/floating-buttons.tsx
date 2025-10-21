@@ -26,10 +26,10 @@ export function FloatingButtons() {
       >
         <Button
           size="icon"
-          className="h-12 w-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90"
+          className="h-12 w-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 md:h-12 md:w-12"
           onClick={scrollToTop}
         >
-          <Calendar className="h-6 w-6" />
+          <Calendar className="h-5 w-5 md:h-6 md:w-6" />
           <span className="sr-only">Umów wizytę</span>
         </Button>
       </motion.div>
@@ -47,7 +47,7 @@ export function FloatingButtons() {
         <Button
           size="icon"
           variant="outline"
-          className="h-12 w-12 rounded-full shadow-lg"
+          className="h-12 w-12 rounded-full shadow-lg md:h-12 md:w-12"
           asChild
         >
           <a
@@ -55,7 +55,7 @@ export function FloatingButtons() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Instagram className="h-6 w-6" />
+            <Instagram className="h-5 w-5 md:h-6 md:w-6" />
             <span className="sr-only">Obserwuj na Instagramie</span>
           </a>
         </Button>
