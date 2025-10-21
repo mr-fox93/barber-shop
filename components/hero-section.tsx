@@ -95,14 +95,15 @@ export function HeroSection() {
                   href="https://book.plandok.com/pl/barberbus"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2"
+                  className="inline-flex items-center justify-center"
                 >
+                  <span className="text-white font-semibold">MECZE</span>
                   <Image
-                    src="/runamegod.png"
-                    alt="KS Maślice"
-                    width={120}
+                    src="/442.png"
+                    alt="442"
+                    width={40}
                     height={40}
-                    className="h-auto w-auto object-contain"
+                    className="h-8 w-8 object-contain"
                   />
                   <motion.div
                     className="absolute inset-0 bg-white/10"
@@ -245,14 +246,15 @@ export function HeroSection() {
                   href="https://book.plandok.com/pl/barberbus"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2"
+                  className="inline-flex items-center justify-center"
                 >
+                  <span className="text-white font-semibold">MECZE</span>
                   <Image
-                    src="/runamegod.png"
-                    alt="KS Maślice"
-                    width={120}
+                    src="/442.png"
+                    alt="442"
+                    width={40}
                     height={40}
-                    className="h-auto w-auto object-contain"
+                    className="h-8 w-8 object-contain"
                   />
                   <motion.div
                     className="absolute inset-0 bg-white/10"

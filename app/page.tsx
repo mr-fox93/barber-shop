@@ -4,6 +4,7 @@ import { ForWhoSection } from "@/components/for-who-section";
 import { HeroSection } from "@/components/hero-section";
 import { ServicesSection } from "@/components/services-section";
 import { SiteHeader } from "@/components/site-header";
+import { GoogleReviewPopup } from "@/components/google-review-popup";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <AboutSection />
         <ContactSection />
       </main>
+      <GoogleReviewPopup />
     </div>
   );
 }
