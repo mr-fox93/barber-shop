@@ -18,6 +18,12 @@ export function GoogleReviewPopup() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleLinkClick = (mapsUrl: string) => {
+    setIsVisible(false);
+    // Użyj standardowego maps.google.com URL który automatycznie otwiera aplikację na mobile
+    window.open(mapsUrl, '_blank');
+  };
+
   if (!isVisible) return null;
 
   return (
@@ -73,10 +79,9 @@ export function GoogleReviewPopup() {
                   asChild
                 >
                   <a
-                    href="https://share.google/utMaI3wxCloId5bYI"
+                    href="https://www.google.com/maps?q=Słoń+Beniamin+Barberbus,+Rychtalska+16,+50-304+Wrocław&ftid=0x470fe9cbb119bf73:0xbc1290d71bc753c3&entry=gps"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => setIsVisible(false)}
                   >
                     Rychtalska
                   </a>
@@ -88,10 +93,9 @@ export function GoogleReviewPopup() {
                   asChild
                 >
                   <a
-                    href="https://share.google/aW3eKw7jo8kUsVKcg"
+                    href="https://www.google.com/maps/place/Słoń+Beniamin+Barberbus/@51.1553275,16.9224082,17z/data=!3m1!4b1!4m6!3m5!1s0x470feb3c125dfa4d:0x338e26a0c8306cbe!8m2!3d51.1553275!4d16.9224082!16s%2Fg%2F11xd8lz121"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => setIsVisible(false)}
                   >
                     Królewiecka
                   </a>
