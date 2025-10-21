@@ -3,11 +3,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function GoogleReviewPopup() {
   const [isVisible, setIsVisible] = useState(false);
+  const t = useTranslations("reviewPopup");
 
   useEffect(() => {
     // Pokaż popup po 1 sekundzie od załadowania strony
@@ -49,7 +51,7 @@ export function GoogleReviewPopup() {
             <div className="flex flex-col items-center gap-2 md:flex-row md:gap-2">
               <div className="flex items-center gap-1.5">
                 <p className="text-xs text-white/90 md:text-sm">
-                  <span className="hidden md:inline">Jesteś naszym klientem? </span>Oceń nas na
+                  <span className="hidden md:inline">{t("question")} </span>{t("rateUs")}
                 </p>
                 <motion.div
                   animate={{
@@ -83,7 +85,7 @@ export function GoogleReviewPopup() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Rychtalska
+                    {t("rychtalska")}
                   </a>
                 </Button>
 
@@ -97,7 +99,7 @@ export function GoogleReviewPopup() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Królewiecka
+                    {t("krolewiecka")}
                   </a>
                 </Button>
               </div>

@@ -88,5 +88,11 @@
     "title": "Page not found",
     "description": "The page you are looking for does not exist or has been moved.",
     "goHome": "Go to homepage"
+  },
+  "reviewPopup": {
+    "question": "Are you our client?",
+    "rateUs": "Rate us on",
+    "rychtalska": "Rychtalska",
+    "krolewiecka": "Królewiecka"
   }
 } 
