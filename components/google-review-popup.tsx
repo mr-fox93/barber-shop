@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { X } from "lucide-react";
@@ -37,7 +36,7 @@ export function GoogleReviewPopup() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative flex w-[240px] flex-col items-center gap-1.5 rounded-2xl border border-white/10 bg-black/50 px-3 py-2 shadow-2xl backdrop-blur-sm md:h-12 md:w-[600px] md:flex-row md:justify-between md:gap-6 md:px-8 md:py-0"
+            className="relative flex w-[280px] flex-col items-center gap-2 rounded-2xl border border-white/10 bg-black/50 px-4 py-2.5 shadow-2xl backdrop-blur-sm md:h-12 md:w-[600px] md:flex-row md:justify-between md:gap-6 md:px-6 md:py-0"
           >
             {/* Przycisk zamknięcia dla mobile */}
             <button
@@ -48,36 +47,26 @@ export function GoogleReviewPopup() {
               <X className="h-3 w-3" />
             </button>
 
-            <div className="flex flex-col items-center gap-2 md:flex-row md:gap-2">
-              <div className="flex items-center gap-1.5">
-                <p className="text-xs text-white/90 md:text-sm">
+            <div className="flex flex-col items-center gap-2.5 md:flex-row md:gap-3">
+              <div className="flex items-center gap-2 whitespace-nowrap">
+                <p className="text-sm text-white/90 font-normal">
                   <span className="hidden md:inline">{t("question")} </span>{t("rateUs")}
                 </p>
-                <motion.div
-                  animate={{
-                    scale: [1, 1.3, 1],
-                  }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <Image
-                    src="/google.png"
-                    alt="Google"
-                  width={100}
-                  height={35}
-                  className="h-6 w-auto object-contain md:h-8"
-                  />
-                </motion.div>
+                <span className="flex items-center gap-0 text-sm font-normal">
+                  <span style={{ color: '#4285F4' }}>G</span>
+                  <span style={{ color: '#EA4335' }}>o</span>
+                  <span style={{ color: '#FBBC05' }}>o</span>
+                  <span style={{ color: '#4285F4' }}>g</span>
+                  <span style={{ color: '#34A853' }}>l</span>
+                  <span style={{ color: '#EA4335' }}>e</span>
+                </span>
               </div>
               
               {/* Buttony dla mobile */}
               <div className="flex items-center gap-2 md:hidden">
                 <Button
                   size="sm"
-                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-2.5 py-1 text-[10px] font-semibold"
+                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-3 py-1.5 text-xs"
                   asChild
                 >
                   <a
@@ -91,7 +80,7 @@ export function GoogleReviewPopup() {
 
                 <Button
                   size="sm"
-                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-2.5 py-1 text-[10px] font-semibold"
+                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-3 py-1.5 text-xs"
                   asChild
                 >
                   <a
@@ -106,10 +95,10 @@ export function GoogleReviewPopup() {
             </div>
 
             {/* Buttony dla desktop */}
-            <div className="hidden items-center gap-2 md:flex">
+            <div className="hidden items-center gap-2.5 md:flex">
               <Button
                 size="sm"
-                className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-2 py-0.5 text-[9px] font-semibold"
+                className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-4 py-1.5 text-xs"
                 asChild
               >
                 <a
@@ -124,7 +113,7 @@ export function GoogleReviewPopup() {
 
               <Button
                 size="sm"
-                className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-2 py-0.5 text-[9px] font-semibold"
+                className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-4 py-1.5 text-xs"
                 asChild
               >
                 <a
@@ -136,14 +125,6 @@ export function GoogleReviewPopup() {
                   Królewiecka
                 </a>
               </Button>
-
-              <button
-                onClick={() => setIsVisible(false)}
-                className="rounded-full p-1.5 text-white/70 transition-colors hover:bg-white/10 hover:text-white"
-                aria-label="Zamknij"
-              >
-                <X className="h-4 w-4" />
-              </button>
             </div>
           </motion.div>
         </div>
