@@ -142,7 +142,8 @@ export function HeroSection() {
             </div>
 
             {/* Desktop "Zamów z dojazdem" button */}
-            <div className="hidden md:block mt-2 md:mt-4">
+            {/* Temporarily disabled - service not currently offered */}
+            {/* <div className="hidden md:block mt-2 md:mt-4">
               <Button
                 size="lg"
                 className="relative w-full overflow-hidden rounded-full border-2 border-primary/40 bg-transparent text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] md:border-primary/60 md:bg-black/5 md:text-white md:backdrop-blur-lg px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:border-primary/90 hover:bg-black/30 sm:w-[300px] md:w-[340px] animate-pulse-slow md:animate-none"
@@ -167,7 +168,7 @@ export function HeroSection() {
                   />
                 </a>
               </Button>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>
@@ -269,7 +270,8 @@ export function HeroSection() {
                   />
                 </a>
               </Button>
-              <Button
+              {/* Temporarily disabled - service not currently offered */}
+              {/* <Button
                 size="lg"
                 className="relative w-full overflow-hidden rounded-full border-2 border-primary/40 bg-transparent text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:border-primary/90 hover:bg-black/30"
                 asChild
@@ -292,7 +294,7 @@ export function HeroSection() {
                     }}
                   />
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

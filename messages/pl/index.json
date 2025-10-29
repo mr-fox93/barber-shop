@@ -88,5 +88,11 @@
     "title": "Strona nie znaleziona",
     "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
     "goHome": "Przejdź na stronę główną"
+  },
+  "reviewPopup": {
+    "question": "Jesteś naszym klientem?",
+    "rateUs": "Oceń nas na",
+    "rychtalska": "Rychtalska",
+    "krolewiecka": "Królewiecka"
   }
 } 
