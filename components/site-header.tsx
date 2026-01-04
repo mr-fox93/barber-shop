@@ -85,7 +85,7 @@ export function SiteHeader() {
             </SheetTrigger>
           </div>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-            <div className="flex justify-end mb-8">
+            <div className="flex justify-end mb-8 pt-8">
               <LanguageSwitcher />
             </div>
             <nav className="flex flex-col gap-4">
