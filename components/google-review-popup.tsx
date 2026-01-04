@@ -63,10 +63,10 @@ export function GoogleReviewPopup() {
               </div>
               
               {/* Buttony dla mobile */}
-              <div className="flex items-center gap-2 md:hidden">
+              <div className="flex items-center gap-1.5 md:hidden">
                 <Button
                   size="sm"
-                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-3 py-1.5 text-xs"
+                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-2 py-1 text-[10px] leading-tight"
                   asChild
                 >
                   <a
@@ -80,7 +80,7 @@ export function GoogleReviewPopup() {
 
                 <Button
                   size="sm"
-                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-3 py-1.5 text-xs"
+                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-2 py-1 text-[10px] leading-tight"
                   asChild
                 >
                   <a
@@ -95,10 +95,10 @@ export function GoogleReviewPopup() {
             </div>
 
             {/* Buttony dla desktop */}
-            <div className="hidden items-center gap-2.5 md:flex">
+            <div className="hidden items-center gap-2 md:flex">
               <Button
                 size="sm"
-                className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-4 py-1.5 text-xs"
+                className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-3 py-1 text-[11px] leading-tight"
                 asChild
               >
                 <a
@@ -113,7 +113,7 @@ export function GoogleReviewPopup() {
 
               <Button
                 size="sm"
-                className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-4 py-1.5 text-xs"
+                className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-3 py-1 text-[11px] leading-tight"
                 asChild
               >
                 <a
