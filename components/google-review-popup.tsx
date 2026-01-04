@@ -19,12 +19,6 @@ export function GoogleReviewPopup() {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleLinkClick = (mapsUrl: string) => {
-    setIsVisible(false);
-    // Użyj standardowego maps.google.com URL który automatycznie otwiera aplikację na mobile
-    window.open(mapsUrl, '_blank');
-  };
-
   if (!isVisible) return null;
 
   return (
@@ -36,7 +30,7 @@ export function GoogleReviewPopup() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative flex w-[280px] flex-col items-center gap-2 rounded-2xl border border-white/10 bg-black/50 px-4 py-2.5 shadow-2xl backdrop-blur-sm md:h-12 md:w-[600px] md:flex-row md:justify-between md:gap-6 md:px-6 md:py-0"
+            className="relative flex w-[240px] flex-col items-center gap-1.5 rounded-2xl border border-white/10 bg-black/50 px-3 py-2 shadow-2xl backdrop-blur-sm md:h-12 md:w-[600px] md:flex-row md:justify-between md:gap-6 md:px-6 md:py-0"
           >
             {/* Przycisk zamknięcia dla mobile */}
             <button
@@ -47,12 +41,12 @@ export function GoogleReviewPopup() {
               <X className="h-3 w-3" />
             </button>
 
-            <div className="flex flex-col items-center gap-2.5 md:flex-row md:gap-3">
-              <div className="flex items-center gap-2 whitespace-nowrap">
-                <p className="text-sm text-white/90 font-normal">
+            <div className="flex flex-col items-center gap-1.5 md:flex-row md:gap-3">
+              <div className="flex items-center gap-1.5 whitespace-nowrap">
+                <p className="text-xs text-white/90 font-normal md:text-sm">
                   <span className="hidden md:inline">{t("question")} </span>{t("rateUs")}
                 </p>
-                <span className="flex items-center gap-0 text-sm font-normal">
+                <span className="flex items-center gap-0 text-xs font-normal md:text-sm">
                   <span style={{ color: '#4285F4' }}>G</span>
                   <span style={{ color: '#EA4335' }}>o</span>
                   <span style={{ color: '#FBBC05' }}>o</span>
@@ -63,10 +57,10 @@ export function GoogleReviewPopup() {
               </div>
               
               {/* Buttony dla mobile */}
-              <div className="flex items-center gap-1.5 md:hidden">
+              <div className="flex items-center gap-1 md:hidden">
                 <Button
                   size="sm"
-                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-2 py-1 text-[10px] leading-tight"
+                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-1.5 py-0.5 text-[9px] leading-tight"
                   asChild
                 >
                   <a
@@ -80,7 +74,7 @@ export function GoogleReviewPopup() {
 
                 <Button
                   size="sm"
-                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-2 py-1 text-[10px] leading-tight"
+                  className="relative overflow-hidden rounded-full border border-white/30 bg-white text-black backdrop-blur-sm shadow-lg transition-all hover:scale-105 hover:bg-white/90 px-1.5 py-0.5 text-[9px] leading-tight"
                   asChild
                 >
                   <a

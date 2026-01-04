@@ -18,8 +18,14 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ["hebbkx1anhila5yf.public.blob.vercel-storage.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "hebbkx1anhila5yf.public.blob.vercel-storage.com",
+      },
+    ],
     formats: ["image/avif", "image/webp"],
+    qualities: [75, 85, 90, 95, 100],
   },
   experimental: {
     webpackBuildWorker: true,
