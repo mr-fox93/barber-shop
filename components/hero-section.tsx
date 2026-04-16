@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="relative h-screen w-full overflow-hidden">
         <div className="relative h-full w-full">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bus-ttufD8Em12JqPmOOB0U4lL4M82MoR7.webp"
+            src="/barberbustwo.jpg"
             alt="BarberBUS Mobilny Salon"
             fill
             priority

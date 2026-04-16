@@ -139,6 +139,48 @@ export function AboutSection() {
               </motion.div>
             </div>
           </div>
+
+          {/* Mateusz's Section */}
+          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="order-2 lg:order-1"
+            >
+              <h2 className="text-4xl font-bold tracking-tight">{t("about.mateuszTitle")}</h2>
+              <div className="mt-6 space-y-4 text-muted-foreground">
+                <p>
+                  {t("about.mateuszParagraph1")}
+                </p>
+                <p>
+                  {t("about.mateuszParagraph2")}
+                </p>
+                <p>
+                  {t("about.mateuszParagraph3")}
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="order-1 lg:order-2"
+            >
+              <div className={getImageClasses()}>
+                <Image
+                  src="/mateusz.jpg"
+                  alt="Mateusz - barber w BarberBUSie"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                  quality={85}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/5 to-transparent" />
+                <div className="absolute inset-0 border border-white/10" />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
