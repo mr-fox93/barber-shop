@@ -169,7 +169,7 @@ export function AboutSection() {
             >
               <div className={getImageClasses()}>
                 <Image
-                  src="/mateusz.jpg"
+                  src="/mateusz_photo.jpeg"
                   alt="Mateusz - barber w BarberBUSie"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
