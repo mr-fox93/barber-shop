@@ -4,12 +4,73 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
+import { ReusableButton } from "@/components/reusable-button";
+
+interface BookingButtonConfig {
+  id: string;
+  href: string;
+  label?: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  ariaLabel?: string;
+  labelClassName?: string;
+  imageClassName?: string;
+  className: string;
+  shineClassName: string;
+  desktopWidthClassName: string;
+  shineDelay?: number;
+}
 
 export function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const t = useTranslations();
+  const bookingButtons: BookingButtonConfig[] = [
+    {
+      id: "rychtalska",
+      href: "https://n1244849.alteg.io/company/1189391/personal/select-services?o=",
+      label: "ul. Rychtalska 16",
+      className:
+        "relative w-full overflow-hidden rounded-full border border-white/30 bg-white/5 px-6 py-5 text-lg font-semibold text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:scale-105 hover:bg-white/25 md:border-transparent md:bg-white md:text-black md:shadow-lg md:backdrop-blur-md md:hover:bg-white/90",
+      shineClassName: "bg-white/10 md:bg-black/5",
+      desktopWidthClassName: "sm:w-[220px] md:w-[250px]",
+    },
+    {
+      id: "krolewiecka",
+      href: "https://n1357118.alteg.io/company/1295664/personal/select-services?o=m2827825",
+      label: "ul. Królewiecka 66",
+      className:
+        "relative w-full overflow-hidden rounded-full border border-white/30 bg-white/5 px-6 py-5 text-lg font-semibold text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:scale-105 hover:bg-white/25 md:border-transparent md:bg-white md:text-black md:shadow-lg md:backdrop-blur-md md:hover:bg-white/90",
+      shineClassName: "bg-white/10 md:bg-black/5",
+      desktopWidthClassName: "sm:w-[220px] md:w-[250px]",
+      shineDelay: 0.5,
+    },
+    {
+      id: "ks-maslice",
+      href: "https://www.instagram.com/ksmaslicewroclaw/",
+      label: "MECZE",
+      imageSrc: "/442.png",
+      imageAlt: "442",
+      labelClassName: "text-white font-semibold",
+      className:
+        "relative w-full overflow-hidden rounded-full border border-white/30 bg-[#FFBF00] px-6 py-5 text-lg font-semibold text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] transition-all hover:scale-105 hover:bg-[#FFBF00]/90 md:border-transparent md:bg-[#FFBF00] md:text-white md:shadow-lg md:backdrop-blur-md",
+      shineClassName: "bg-white/10",
+      desktopWidthClassName: "sm:w-[220px] md:w-[250px]",
+      shineDelay: 0.25,
+    },
+    {
+      id: "runmageddon",
+      href: "https://book.plandok.com/pl/barberbus",
+      label: "RUNMAGEDON",
+      ariaLabel: "RUNMAGEDON",
+      labelClassName: "text-white font-semibold",
+      className:
+        "relative w-full overflow-hidden rounded-full border border-white/30 bg-[#ffdd00] px-6 py-5 text-lg font-semibold text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.2)] transition-all hover:scale-105 hover:bg-[#ffdd00]/90",
+      shineClassName: "bg-black/10",
+      desktopWidthClassName: "sm:w-[220px] md:w-[250px]",
+      shineDelay: 0.75,
+    },
+  ];
 
   return (
     <section className="relative">
@@ -37,108 +98,38 @@ export function HeroSection() {
           <div className="flex flex-col space-y-6">
             {/* Desktop buttons */}
             <div className="hidden md:flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center">
-              <Button
-                size="lg"
-                className="relative w-full overflow-hidden rounded-full border border-white/30 bg-white/5 text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] md:border-transparent md:bg-white md:text-black md:shadow-lg md:backdrop-blur-md px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-white/25 md:hover:bg-white/90 sm:w-[220px] md:w-[250px] animate-pulse-slow md:animate-none"
-                asChild
-              >
-                <a
-                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o="
+              {bookingButtons.map((button) => (
+                <ReusableButton
+                  key={button.id}
+                  size="lg"
+                  href={button.href}
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ul. Rychtalska 16
-                  <motion.div
-                    className="absolute inset-0 bg-white/10 md:bg-black/5"
-                    initial={{ x: "-100%" }}
-                    animate={{ x: "100%" }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Number.POSITIVE_INFINITY,
-                      repeatDelay: 2,
-                    }}
-                  />
-                </a>
-              </Button>
-
-              <Button
-                size="lg"
-                className="relative w-full overflow-hidden rounded-full border border-white/30 bg-white/5 text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] md:border-transparent md:bg-white md:text-black md:shadow-lg md:backdrop-blur-md px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-white/25 md:hover:bg-white/90 sm:w-[220px] md:w-[250px] animate-pulse-slow md:animate-none"
-                asChild
-              >
-                <a
-                  href="https://n1357118.alteg.io/company/1295664/personal/select-services?o=m2827825"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ul. Królewiecka 66
-                  <motion.div
-                    className="absolute inset-0 bg-white/10 md:bg-black/5"
-                    initial={{ x: "-100%" }}
-                    animate={{ x: "100%" }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Number.POSITIVE_INFINITY,
-                      repeatDelay: 2,
-                      delay: 0.5,
-                    }}
-                  />
-                </a>
-              </Button>
-
-              <Button
-                size="lg"
-                className="relative w-full overflow-hidden rounded-full border border-white/30 bg-[#FFBF00] text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] md:border-transparent md:bg-[#FFBF00] md:text-white md:shadow-lg md:backdrop-blur-md px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-[#FFBF00]/90 sm:w-[220px] md:w-[250px]"
-                asChild
-              >
-                <a
-                  href="https://book.plandok.com/pl/barberbus"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center"
-                >
-                  <span className="text-white font-semibold">MECZE</span>
-                  <Image
-                    src="/442.png"
-                    alt="442"
-                    width={40}
-                    height={40}
-                    className="h-8 w-8 object-contain"
-                  />
-                  <motion.div
-                    className="absolute inset-0 bg-white/10"
-                    initial={{ x: "-100%" }}
-                    animate={{ x: "100%" }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Number.POSITIVE_INFINITY,
-                      repeatDelay: 2,
-                      delay: 0.25,
-                    }}
-                  />
-                </a>
-              </Button>
+                  label={button.label}
+                  imageSrc={button.imageSrc}
+                  imageAlt={button.imageAlt}
+                  ariaLabel={button.ariaLabel}
+                  labelClassName={button.labelClassName}
+                  imageClassName={button.imageClassName}
+                  className={`${button.className} ${button.desktopWidthClassName} animate-pulse-slow md:animate-none`}
+                  shine
+                  shineClassName={button.shineClassName}
+                  shineDelay={button.shineDelay}
+                />
+              ))}
             </div>
 
             {/* Mobile button */}
             <div className="md:hidden flex justify-center">
-              <Button
+              <ReusableButton
                 size="lg"
                 onClick={() => setIsModalOpen(true)}
                 className="relative overflow-hidden rounded-full border border-white/30 bg-white/5 text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-white/25 animate-pulse-slow w-[280px]"
-              >
-                {t("hero.button")}
-                <motion.div
-                  className="absolute inset-0 bg-white/30"
-                  initial={{ x: "-100%" }}
-                  animate={{ x: "100%" }}
-                  transition={{
-                    duration: 2,
-                    repeat: Number.POSITIVE_INFINITY,
-                    repeatDelay: 1,
-                  }}
-                />
-              </Button>
+                label={t("hero.button")}
+                shine
+                shineClassName="bg-white/30"
+                shineDuration={2}
+                shineRepeatDelay={1}
+              />
             </div>
 
             {/* Desktop "Zamów z dojazdem" button */}
@@ -191,85 +182,24 @@ export function HeroSection() {
               {t("hero.button")}
             </h2>
             <div className="space-y-4">
-              <Button
-                size="lg"
-                className="relative w-full overflow-hidden rounded-full border border-white/30 bg-white/5 text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-white/25"
-                asChild
-              >
-                <a
-                  href="https://n1244849.alteg.io/company/1189391/personal/select-services?o="
+              {bookingButtons.map((button) => (
+                <ReusableButton
+                  key={button.id}
+                  size="lg"
+                  href={button.href}
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ul. Rychtalska 16
-                  <motion.div
-                    className="absolute inset-0 bg-white/10"
-                    initial={{ x: "-100%" }}
-                    animate={{ x: "100%" }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Number.POSITIVE_INFINITY,
-                      repeatDelay: 2,
-                    }}
-                  />
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                className="relative w-full overflow-hidden rounded-full border border-white/30 bg-white/5 text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-white/25"
-                asChild
-              >
-                <a
-                  href="https://n1357118.alteg.io/company/1295664/personal/select-services?o=m2827825"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ul. Królewiecka 66
-                  <motion.div
-                    className="absolute inset-0 bg-white/10"
-                    initial={{ x: "-100%" }}
-                    animate={{ x: "100%" }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Number.POSITIVE_INFINITY,
-                      repeatDelay: 2,
-                      delay: 0.5,
-                    }}
-                  />
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                className="relative w-full overflow-hidden rounded-full border border-white/30 bg-[#FFBF00] text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-[#FFBF00]/90"
-                asChild
-              >
-                <a
-                  href="https://book.plandok.com/pl/barberbus"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center"
-                >
-                  <span className="text-white font-semibold">MECZE</span>
-                  <Image
-                    src="/442.png"
-                    alt="442"
-                    width={40}
-                    height={40}
-                    className="h-8 w-8 object-contain"
-                  />
-                  <motion.div
-                    className="absolute inset-0 bg-white/10"
-                    initial={{ x: "-100%" }}
-                    animate={{ x: "100%" }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Number.POSITIVE_INFINITY,
-                      repeatDelay: 2,
-                      delay: 0.25,
-                    }}
-                  />
-                </a>
-              </Button>
+                  label={button.label}
+                  imageSrc={button.imageSrc}
+                  imageAlt={button.imageAlt}
+                  ariaLabel={button.ariaLabel}
+                  labelClassName={button.labelClassName}
+                  imageClassName={button.imageClassName}
+                  className={button.className}
+                  shine
+                  shineClassName={button.shineClassName}
+                  shineDelay={button.shineDelay}
+                />
+              ))}
               {/* Temporarily disabled - service not currently offered */}
               {/* <Button
                 size="lg"

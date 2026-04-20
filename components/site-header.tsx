@@ -27,6 +27,7 @@ export function SiteHeader() {
     { name: t("header.services"), href: "#services" },
     { name: t("header.forWho"), href: "#forWho" },
     { name: t("header.about"), href: "#about" },
+    { name: t("header.gallery"), href: "#gallery" },
     { name: t("header.contact"), href: "#contact" },
   ];
 
@@ -50,7 +51,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden xl:flex items-center space-x-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -63,7 +64,7 @@ export function SiteHeader() {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center space-x-2">
+        <div className="hidden xl:flex items-center space-x-2">
           <LanguageSwitcher />
           <Button
             size="sm"
@@ -75,7 +76,7 @@ export function SiteHeader() {
         </div>
 
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <div className="flex items-center space-x-2 md:hidden">
+          <div className="flex items-center space-x-2 xl:hidden">
             <LanguageSwitcher />
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
