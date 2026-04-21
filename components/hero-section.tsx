@@ -123,7 +123,7 @@ export function HeroSection() {
               <ReusableButton
                 size="lg"
                 onClick={() => setIsModalOpen(true)}
-                className="relative overflow-hidden rounded-full border border-white/30 bg-white/5 text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-white/25 animate-pulse-slow w-[280px]"
+                className="relative overflow-hidden rounded-full border border-white/70 bg-[#fffff6] text-black backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.1)] px-6 py-5 text-lg font-semibold transition-all hover:scale-105 hover:bg-white/90 w-[280px]"
                 label={t("hero.button")}
                 shine
                 shineClassName="bg-white/30"
