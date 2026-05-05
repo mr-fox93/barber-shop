@@ -46,19 +46,6 @@ export function HeroSection() {
       shineDelay: 0.5,
     },
     {
-      id: "ks-maslice",
-      href: "https://www.instagram.com/ksmaslicewroclaw/",
-      label: "MECZE",
-      imageSrc: "/442.png",
-      imageAlt: "442",
-      labelClassName: "text-white font-semibold",
-      className:
-        "relative w-full overflow-hidden rounded-full border border-white/30 bg-[#FFBF00] px-6 py-5 text-lg font-semibold text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.15)] transition-all hover:scale-105 hover:bg-[#FFBF00]/90 md:border-transparent md:bg-[#FFBF00] md:text-white md:shadow-lg md:backdrop-blur-md",
-      shineClassName: "bg-white/10",
-      desktopWidthClassName: "sm:w-[220px] md:w-[250px]",
-      shineDelay: 0.25,
-    },
-    {
       id: "runmageddon",
       href: "https://book.plandok.com/pl/barberbus",
       label: "RUNMAGEDON",

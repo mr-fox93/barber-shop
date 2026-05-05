@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, MapPin } from "lucide-react";
@@ -12,11 +12,14 @@ interface EventPopupProps {
   delayMs?: number;
   logo?: string;
   logoAlt?: string;
+  logoNode?: React.ReactNode;
   title: string;
   subtitle?: string;
   description: string;
   locationUrl?: string;
   locationButtonText?: string;
+  buttonIcon?: React.ReactNode;
+  confetti?: boolean;
 }
 
 export function EventPopup({
@@ -25,11 +28,14 @@ export function EventPopup({
   delayMs = 2000,
   logo,
   logoAlt = "",
+  logoNode,
   title,
   subtitle,
   description,
   locationUrl,
   locationButtonText = "Zobacz lokalizację",
+  buttonIcon,
+  confetti = false,
 }: EventPopupProps) {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -39,6 +45,81 @@ export function EventPopup({
     const timer = setTimeout(() => setIsVisible(true), delayMs);
     return () => clearTimeout(timer);
   }, [enabled, delayMs]);
+
+  useEffect(() => {
+    if (!isVisible || !confetti) return;
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    let cancelled = false;
+    let secondSalvoTimer: ReturnType<typeof setTimeout> | null = null;
+
+    import("canvas-confetti").then(({ default: fire }) => {
+      if (cancelled) return;
+
+      const shoot = (origin: { x: number; y: number }, angle: number) =>
+        fire({
+          particleCount: 60,
+          angle,
+          spread: 55,
+          origin,
+          colors: ["#ffffff", "#aaaaaa", "#555555", "#e0e0e0"],
+          scalar: 0.9,
+          gravity: 1.2,
+          drift: 0,
+        });
+
+      shoot({ x: 0.1, y: 0.6 }, 60);
+      shoot({ x: 0.9, y: 0.6 }, 120);
+
+      secondSalvoTimer = setTimeout(() => {
+        if (!cancelled) {
+          shoot({ x: 0.2, y: 0.5 }, 70);
+          shoot({ x: 0.8, y: 0.5 }, 110);
+        }
+      }, 300);
+    });
+
+    return () => {
+      cancelled = true;
+      if (secondSalvoTimer) clearTimeout(secondSalvoTimer);
+    };
+  }, [isVisible, confetti]);
+
+  useEffect(() => {
+    if (!isVisible || !confetti) return;
+
+    let cancelled = false;
+
+    import("canvas-confetti").then(({ default: fire }) => {
+      if (cancelled) return;
+
+      const shoot = (origin: { x: number; y: number }, angle: number) =>
+        fire({
+          particleCount: 60,
+          angle,
+          spread: 55,
+          origin,
+          colors: ["#ffffff", "#aaaaaa", "#555555", "#e0e0e0"],
+          scalar: 0.9,
+          gravity: 1.2,
+          drift: 0,
+        });
+
+      shoot({ x: 0.1, y: 0.6 }, 60);
+      shoot({ x: 0.9, y: 0.6 }, 120);
+
+      setTimeout(() => {
+        if (!cancelled) {
+          shoot({ x: 0.2, y: 0.5 }, 70);
+          shoot({ x: 0.8, y: 0.5 }, 110);
+        }
+      }, 300);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [isVisible, confetti]);
 
   const handleClose = () => {
     setIsVisible(false);
@@ -73,15 +154,19 @@ export function EventPopup({
             </button>
 
             <div className="overflow-y-auto overscroll-contain">
-              {logo && (
+              {(logo || logoNode) && (
                 <div className="flex justify-center pt-7 pb-1 sm:pt-8 sm:pb-2">
-                  <Image
-                    src={logo}
-                    alt={logoAlt}
-                    width={120}
-                    height={120}
-                    className="h-20 w-auto object-contain sm:h-24"
-                  />
+                  {logo ? (
+                    <Image
+                      src={logo}
+                      alt={logoAlt}
+                      width={120}
+                      height={120}
+                      className="h-20 w-auto object-contain sm:h-24"
+                    />
+                  ) : (
+                    logoNode
+                  )}
                 </div>
               )}
 
@@ -112,7 +197,7 @@ export function EventPopup({
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2"
                     >
-                      <MapPin className="h-4 w-4" />
+                      {buttonIcon ?? <MapPin className="h-4 w-4" />}
                       {locationButtonText}
                       <motion.div
                         className="absolute inset-0 bg-black/5"
