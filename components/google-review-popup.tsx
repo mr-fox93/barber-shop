@@ -11,12 +11,13 @@ export function GoogleReviewPopup() {
   const t = useTranslations("reviewPopup");
 
   useEffect(() => {
-    // Pokaż popup po 1 sekundzie od załadowania strony
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 1000);
+    const show = () => {
+      const timer = setTimeout(() => setIsVisible(true), 500);
+      return () => clearTimeout(timer);
+    };
 
-    return () => clearTimeout(timer);
+    window.addEventListener("event-popup-closed", show);
+    return () => window.removeEventListener("event-popup-closed", show);
   }, []);
 
   if (!isVisible) return null;
@@ -99,7 +100,6 @@ export function GoogleReviewPopup() {
                   href="https://www.google.com/search?client=opera&hs=aWI&sca_esv=e4e3b1ba951674fc&sxsrf=AE3TifNCjcrGXW0OTVzRc3OZhPNSeG_--g:1761058061277&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0IntkpLOHXfXahZQtgeAr_aDT-Ct_4oEj34wRf6AGOHZkQZahTIBtyAwK2IkYQFRqvIfLcCCXugW9WpuYBvUqUkA2_p7OVmA5dY53wrIuEFlkEhqA%3D%3D&q=Słoń+Beniamin+Barberbus+Opinie&sa=X&ved=2ahUKEwi_m6_BxLWQAxUW0QIHHbD_LhYQ0bkNegQIHxAE&biw=1410&bih=778&dpr=2#lrd=0x470fe9cbb119bf73:0xbc1290d71bc753c3,3,,,,"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => setIsVisible(false)}
                 >
                   Rychtalska
                 </a>
@@ -114,7 +114,6 @@ export function GoogleReviewPopup() {
                   href="https://www.google.com/search?client=opera&q=barber+bus+krolewiecka&sourceid=opera&ie=UTF-8&oe=UTF-8&lqi=ChZiYXJiZXIgYnVzIGtyb2xld2llY2thSMGIvImxvICACFogEAAQARACGAIiFmJhcmJlciBidXMga3JvbGV3aWVja2GSARJ1bmlzZXhfaGFpcmRyZXNzZXKaASRDaGREU1VoTk1HOW5TMFZKY1ZnM0xVaFVObk54VW01blJSQUKqAWkKDS9nLzExeGQ4bHoxMjEKCS9tLzAxMnF5YhABKg4iCmJhcmJlciBidXMoCzIfEAEiG5jP2tZ9-8_uCWqZ8ewT9aGilc0UNOYY_cluXTIaEAIiFmJhcmJlciBidXMga3JvbGV3aWVja2H6AQQIABBB#lkt=LocalPoiReviews&rlimm=3714949214622477502&lrd=0x470feb3c125dfa4d:0x338e26a0c8306cbe,3,,,,"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => setIsVisible(false)}
                 >
                   Królewiecka
                 </a>

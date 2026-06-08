@@ -6,6 +6,8 @@ import { HeroSection } from "@/components/hero-section";
 import { ServicesSection } from "@/components/services-section";
 import { SiteHeader } from "@/components/site-header";
 import { EventPopup } from "@/components/event-popup";
+import { GoogleReviewPopup } from "@/components/google-review-popup";
+
 function InstagramIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -24,7 +26,6 @@ function InstagramIcon({ className }: { className?: string }) {
     </svg>
   );
 }
-
 
 const EVENT_POPUP_ENABLED = true;
 
@@ -54,8 +55,9 @@ export default function Home() {
         locationUrl="https://www.instagram.com/reels/DX4ypEYMQna/"
         locationButtonText="Zobacz relację na Instagramie"
         buttonIcon={<InstagramIcon className="h-4 w-4" />}
-        confetti
       />
+
+      <GoogleReviewPopup />
     </div>
   );
 }
