@@ -47,7 +47,7 @@ export function HeroSection() {
     },
     {
       id: "runmageddon",
-      href: "https://book.plandok.com/pl/barberbus",
+      href: "https://www.instagram.com/barberbus.pl/reel/DYHJjs-s0FC/",
       label: "RUNMAGEDON",
       ariaLabel: "RUNMAGEDON",
       labelClassName: "text-white font-semibold",

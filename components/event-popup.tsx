@@ -19,7 +19,7 @@ interface EventPopupProps {
   locationUrl?: string;
   locationButtonText?: string;
   buttonIcon?: React.ReactNode;
-  confetti?: boolean;
+  onClose?: () => void;
 }
 
 export function EventPopup({
@@ -35,7 +35,7 @@ export function EventPopup({
   locationUrl,
   locationButtonText = "Zobacz lokalizację",
   buttonIcon,
-  confetti = false,
+  onClose,
 }: EventPopupProps) {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -46,83 +46,10 @@ export function EventPopup({
     return () => clearTimeout(timer);
   }, [enabled, delayMs]);
 
-  useEffect(() => {
-    if (!isVisible || !confetti) return;
-    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    let cancelled = false;
-    let secondSalvoTimer: ReturnType<typeof setTimeout> | null = null;
-
-    import("canvas-confetti").then(({ default: fire }) => {
-      if (cancelled) return;
-
-      const shoot = (origin: { x: number; y: number }, angle: number) =>
-        fire({
-          particleCount: 60,
-          angle,
-          spread: 55,
-          origin,
-          colors: ["#ffffff", "#aaaaaa", "#555555", "#e0e0e0"],
-          scalar: 0.9,
-          gravity: 1.2,
-          drift: 0,
-        });
-
-      shoot({ x: 0.1, y: 0.6 }, 60);
-      shoot({ x: 0.9, y: 0.6 }, 120);
-
-      secondSalvoTimer = setTimeout(() => {
-        if (!cancelled) {
-          shoot({ x: 0.2, y: 0.5 }, 70);
-          shoot({ x: 0.8, y: 0.5 }, 110);
-        }
-      }, 300);
-    });
-
-    return () => {
-      cancelled = true;
-      if (secondSalvoTimer) clearTimeout(secondSalvoTimer);
-    };
-  }, [isVisible, confetti]);
-
-  useEffect(() => {
-    if (!isVisible || !confetti) return;
-
-    let cancelled = false;
-
-    import("canvas-confetti").then(({ default: fire }) => {
-      if (cancelled) return;
-
-      const shoot = (origin: { x: number; y: number }, angle: number) =>
-        fire({
-          particleCount: 60,
-          angle,
-          spread: 55,
-          origin,
-          colors: ["#ffffff", "#aaaaaa", "#555555", "#e0e0e0"],
-          scalar: 0.9,
-          gravity: 1.2,
-          drift: 0,
-        });
-
-      shoot({ x: 0.1, y: 0.6 }, 60);
-      shoot({ x: 0.9, y: 0.6 }, 120);
-
-      setTimeout(() => {
-        if (!cancelled) {
-          shoot({ x: 0.2, y: 0.5 }, 70);
-          shoot({ x: 0.8, y: 0.5 }, 110);
-        }
-      }, 300);
-    });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [isVisible, confetti]);
-
   const handleClose = () => {
     setIsVisible(false);
+    onClose?.();
+    window.dispatchEvent(new Event("event-popup-closed"));
   };
 
   if (!enabled) return null;
