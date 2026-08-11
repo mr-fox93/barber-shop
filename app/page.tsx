@@ -27,7 +27,7 @@ function InstagramIcon({ className }: { className?: string }) {
   );
 }
 
-const EVENT_POPUP_ENABLED = true;
+const EVENT_POPUP_ENABLED = false;
 
 export default function Home() {
   return (

@@ -78,7 +78,6 @@ export default async function RootLayout({
       ? "Pierwszy mobilny barber shop we Wrocławiu. Profesjonalne usługi barberskie z dojazdem do klienta w domu lub biurze. Także 2 stałe lokalizacje."
       : "First mobile barber shop in Wrocław. Professional barber services at your home or office. Also 2 permanent locations.",
     "url": "https://barberbus.pl",
-    "telephone": "+48660739882",
     "image": "https://barberbus.pl/linkedin.png",
     "address": {
       "@type": "PostalAddress",

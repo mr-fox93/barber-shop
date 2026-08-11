@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Instagram, MapPin, Phone } from "lucide-react";
+import { Instagram, MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function ContactSection() {
@@ -20,12 +20,6 @@ export function ContactSection() {
   }, []);
 
   const contactInfo = [
-    {
-      icon: Phone,
-      title: t("contact.phoneContact"),
-      description: t("contact.phoneContactText"),
-      href: "tel:+48660739882",
-    },
     {
       icon: MapPin,
       title: t("contact.location"),
@@ -59,11 +53,11 @@ export function ContactSection() {
           </h2>
         </div>
         
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2 sm:gap-8">
           {contactInfo.map((contactItem, index) => (
             <div 
               key={contactItem.title}
-              className="group flex flex-col rounded-lg border border-white/10 bg-black/50 p-4 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 h-full"
+              className="group flex flex-col rounded-lg border border-white/10 bg-black/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 h-full"
               style={{
                 opacity: shouldAnimate ? 1 : 0,
                 transform: shouldAnimate ? 'translateY(0)' : 'translateY(20px)',
