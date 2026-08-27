@@ -45,18 +45,20 @@ export function HeroSection() {
       desktopWidthClassName: "sm:w-[220px] md:w-[250px]",
       shineDelay: 0.5,
     },
-    {
-      id: "runmageddon",
-      href: "https://www.instagram.com/barberbus.pl/reel/DYHJjs-s0FC/",
-      label: "RUNMAGEDON",
-      ariaLabel: "RUNMAGEDON",
-      labelClassName: "text-white font-semibold",
-      className:
-        "relative w-full overflow-hidden rounded-full border border-white/30 bg-[#ffdd00] px-6 py-5 text-lg font-semibold text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.2)] transition-all hover:scale-105 hover:bg-[#ffdd00]/90",
-      shineClassName: "bg-black/10",
-      desktopWidthClassName: "sm:w-[220px] md:w-[250px]",
-      shineDelay: 0.75,
-    },
+    // Temporarily disabled — no current Runmageddon collaboration.
+    // Shared by desktop hero buttons and the mobile booking modal.
+    // {
+    //   id: "runmageddon",
+    //   href: "https://www.instagram.com/barberbus.pl/reel/DYHJjs-s0FC/",
+    //   label: "RUNMAGEDON",
+    //   ariaLabel: "RUNMAGEDON",
+    //   labelClassName: "text-white font-semibold",
+    //   className:
+    //     "relative w-full overflow-hidden rounded-full border border-white/30 bg-[#ffdd00] px-6 py-5 text-lg font-semibold text-white backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.2)] transition-all hover:scale-105 hover:bg-[#ffdd00]/90",
+    //   shineClassName: "bg-black/10",
+    //   desktopWidthClassName: "sm:w-[220px] md:w-[250px]",
+    //   shineDelay: 0.75,
+    // },
   ];
 
   return (

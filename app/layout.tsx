@@ -169,10 +169,11 @@ export default async function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
+        {/* Temporarily unused — Wallpoet was for Runmageddon button text */}
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap"
           rel="stylesheet"
-        />
+        /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

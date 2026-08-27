@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 /* Import fontów */
-@import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
+/* Temporarily unused — Wallpoet was for Runmageddon button text */
+/* @import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Klasa stylu dla tekstu Runmageddon */
+/* Temporarily unused — Runmageddon button styling
 .runmageddon-text {
   font-family: "Wallpoet", cursive;
   text-transform: uppercase;
@@ -18,6 +19,7 @@ body {
   font-weight: 700;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
+*/
 
 @layer utilities {
   .text-balance {
